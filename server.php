@@ -4,12 +4,20 @@
         public $id = 10001;
 
         public function displayuserinfo(){
-            echo "The id of " + $this->user + "is " + $this->id + ".";
+            echo "The id of ";
+            echo $this->user;
+            echo "is ";
+            echo $this->id;
+            echo ".";
+            echo "<br>";
+
+            return $this->id;
         }
     }
 
-    // $fun = new simpleobject();
-    // $fun->displayuserinfo();
+    $fun = new simpleobject();
+    $funvalue = $fun->displayuserinfo();
     echo "Hello world!";
-    echo $user;
+    echo "<br>";
+    echo $funvalue;
 ?>
