@@ -25,6 +25,8 @@
     echo "<br>";
     echo $_SERVER["REQUEST_URI"];
 
-    $uri = $_SERVER["http_host"];
-    header('Location: http://'.$uri.'/Test');
+    $uri = 'http://';
+    $uri .= $_SERVER["HTTP_HOST"];
+    header('Location: '.$uri.'/test');
+    exit;
 ?>
